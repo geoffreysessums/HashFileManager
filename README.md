@@ -1,14 +1,28 @@
-# Project: HashFileManager
+# HashFileManager
+
+Geoffrey Sessums
+CS 3743 Database Systems - Fall 2018
+Language: C
 
 ## Description
 
-HashFileManager creates (if necessary), opens, and edits a hashed file 
-containing movie records using simple chaining to handle synonyms. The 
-hashFileManager receives input from the hashFileDriver which uses an 
+HashFileManager creates (if necessary), opens, and edits a hashed file
+containing movie records using simple chaining to handle synonyms. The
+hashFileManager receives input from the hashFileDriver which uses an
 input file (Input.txt) containing the commands create, open, insert, read,
 and dump (see command descriptions below).
 
-### Commands within the input file to help explain what is being tested
+## What I Learned
+
+* How to create, open, and edit files in C.
+* How to redirect output to a file.
+* How to return a value through the parameter by passing the address of a
+   structure and accessing its members.
+* How to create a hashed direct access file to allow access at particular positions
+  directly (i.e. without having to read the file sequentially).
+* How to implement chaining to handle hash collisions.
+
+### Command Descriptions
 
     CREATE MOVIE fileName numPrimary
         Create the specified hash file if it doesn't already exist
@@ -30,7 +44,7 @@ and dump (see command descriptions below).
     NUKE MOVIE fileName
         Removes the specified file.
 
-### HashFileManager produces the following results
+### HashFileManager Output
 
 All output is written to stdout.
 Prints each of the commands and their command parameters. Some of the
@@ -40,7 +54,7 @@ commands print information:
     INSERT - prints the primary RBN
     READ   - prints the movie information (if found)
 
-### HashFileManager produces the following return codes
+### HashFileManager Return Codes
 
     RC_OK               0   // normal
     RC_FILE_EXISTS      1   // file already exists
@@ -55,18 +69,23 @@ commands print information:
 ## Installation
 
 **(Driver not included)**
-This project demonstrates how one might implement a hash file manager, how
-I approach solving problems, the complexity of projects I've worked on, and
-my documentation style.
+To compile and execute hashFileManager.c requires a driver. Unfortunately,
+due to copyrights held by the instructor of the course, I can't include it.
+The purpose of the project is to demonstrate my compentency with the C
+programming language, pointer manipulation, database concepts, and documentation
+style.
 
 ## Usage
 
-**The syntax for executing the program on the command-line:**
+Run command:
+
+```bash
 hashFileDriver < infile > outfile
+```
 
 ## Credits
 
-Authors: Geoffrey Sessums
+Author: Geoffrey Sessums
 
 ## License
 
