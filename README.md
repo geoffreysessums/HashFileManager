@@ -2,11 +2,11 @@
 
 ## Description
 
-The hashFileManager opens, creates (if necessary), and edits a hash file
-(movie.dat) containing movie records. It also implements chaining to handle
-synonyms. The hashFileManager receives input from the hashFileDriver which
-uses an input file (Input.txt) containing the commands create, open, insert,
-read, and dump (see command descriptions below).
+HashFileManager creates (if necessary), opens, and edits a hashed file 
+containing movie records using simple chaining to handle synonyms. The 
+hashFileManager receives input from the hashFileDriver which uses an 
+input file (Input.txt) containing the commands create, open, insert, read,
+and dump (see command descriptions below).
 
 ### Commands within the input file to help explain what is being tested
 
