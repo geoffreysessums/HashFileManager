@@ -1,8 +1,8 @@
 # HashFileManager
 
-Geoffrey Sessums
-CS 3743 Database Systems - Fall 2018
-Language: C
+Geoffrey Sessums  
+CS 3743 Database Systems - Fall 2018  
+Language: C  
 
 ## Description
 
@@ -46,7 +46,6 @@ and dump (see command descriptions below).
 
 ### HashFileManager Output
 
-All output is written to stdout.
 Prints each of the commands and their command parameters. Some of the
 commands print information:  
 
@@ -79,9 +78,7 @@ style.
 
 Run command:
 
-```bash
-hashFileDriver < infile > outfile
-```
+    hashFileDriver < infile > outfile
 
 ## Credits
 
