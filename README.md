@@ -1,7 +1,7 @@
 # HashFileManager
 
 Geoffrey Sessums  
-CS 3743 Database Systems - Fall 2018  
+Database Systems - Fall 2018  
 Language: C  
 
 ## Description
